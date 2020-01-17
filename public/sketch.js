@@ -7,9 +7,8 @@ var zoom = 1;
 
 function setup() {
   createCanvas(600, 600);
-  // Start a socket connection to the server
-  // Some day we would run this server somewhere else
-  socket = io.connect('http://localhost:3000');
+  
+  socket = io.connect('https://stormy-headland-27159.herokuapp.com:3000');
 
   blob = new Blob(random(width), random(height), random(16, 24));
   // Make a little object with  and y
